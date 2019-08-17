@@ -1,0 +1,316 @@
+
+/* 字体大小 */
+
+.font-18 {
+  font-size: 18rpx;
+}
+
+.font-20 {
+  font-size: 20rpx;
+}
+
+.font-22 {
+  font-size: 22rpx;
+}
+
+.font-24 {
+  font-size: 24rpx;
+}
+
+.font-26 {
+  font-size: 26rpx;
+}
+
+.font-28 {
+  font-size: 28rpx;
+}
+
+.font-30 {
+  font-size: 30rpx;
+}
+
+.font-32 {
+  font-size: 32rpx;
+}
+
+.font-34 {
+  font-size: 34rpx;
+}
+
+.font-36 {
+  font-size: 36rpx;
+}
+
+.font-38 {
+  font-size: 38rpx;
+}
+
+.font-40 {
+  font-size: 40rpx;
+}
+
+.font-48 {
+  font-size: 48rpx;
+}
+
+/* 百分比宽度 */
+
+.width-25 {
+  width: 25%;
+}
+
+.width-33 {
+  width: 33.33%;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+/* 通用字体白 */
+
+.color-fff {
+  color: #fff;
+}
+
+.color-bbb {
+  color: #bbb;
+}
+
+/* 通用字体黑 */
+
+.color-ccc {
+  color: #ccc;
+}
+
+/* 通用描述字体色 */
+
+.color-80 {
+  color: #808080;
+}
+
+.color-666 {
+  color: #666;
+}
+
+/* 通用品牌色 */
+
+.color-7f4395 {
+  color: #7f4395;
+}
+
+/* 通用价格色 */
+
+.color-ff3333 {
+  color: #f33;
+}
+
+/* 通用字体 */
+.ft-regular{
+	font-family: PingFangSC-Regular, helvetica, 'Heiti SC';
+}
+.ft-medium{
+	font-family: PingFangSC-Medium, helvetica, 'Heiti SC';
+}
+
+/* 线性渐变 */
+
+.linear-active {
+  transition: all;
+  transition-timing-function: linear;
+  transition-duration: 0.2s;
+}
+
+/* 帧动画 淡入*/
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* 帧动画 淡出*/
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* 帧动画 淡入伴随放大效果*/
+
+@keyframes fadeInWithScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* 帧动画 旋转*/
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 1像素边线 */
+
+.line-w-top, .line-w-bottom, .line-h-left, .line-h-right {
+  position: relative;
+}
+
+.line-w-top::after, .line-w-bottom::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2rpx;
+  background: #ccc;
+  transform-origin: 50% 100%;
+  transform: scaleY(0.5);
+}
+
+.line-w-top::after {
+  top: 0;
+  left: 0;
+}
+
+.line-w-bottom::after {
+  bottom: 0;
+  left: 0;
+}
+
+.line-h-left::after, .line-h-right::after {
+  position: absolute;
+  content: "";
+  width: 2rpx;
+  height: 100%;
+  background: #ccc;
+  transform-origin: 100% 50%;
+  transform: scaleX(0.5);
+}
+
+.line-h-left::after {
+  top: 0;
+  left: 0;
+}
+
+.line-h-right::after {
+  top: 0;
+  right: 0;
+}
+
+/* 定位相关 */
+
+.psre {
+  position: relative;
+}
+
+.psab {
+  position: absolute;
+}
+
+.psfx {
+  position: fixed;
+}
+
+.pscenter {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 单行省略 */
+
+.escp {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.escp-2{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.escp-3{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+/* 左右抖动 */
+.shake-h {
+  animation: shake-h 1s;
+  -o-animation: shake-h 1s;
+  -webkit-animation: shake-h 1s;
+  -moz-animation: shake-h 1s;
+}
+
+@keyframes shake-h {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10rpx);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10rpx);
+  }
+}
+
+
+
+.formId-height{
+  position: relative;
+  height: 100%;
+}
+
+
+
+
+/* 推送按钮 */
+.push-btn{
+  border:1px solid transparent !important;
+  background-color:transparent !important;
+  width:100%;
+  height:100%;
+  top:0;
+  right:0;
+  position:absolute;
+  z-index: 1;
+}
+
+
+/* 按钮按压效果 */
+.btn-hover{
+  opacity: .7;
+}
