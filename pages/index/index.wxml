@@ -9,6 +9,6 @@
   </view>
   <view class="usermotto">
     <view class="user-motto">{{motto}}</view>
-    <view class="user-motto">{{name}}</view>
+    <view class="user-name">{{name}}</view>
   </view>
 </view>

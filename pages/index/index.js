@@ -6,7 +6,7 @@ const app = getApp()
 
 Page({
     data: {
-        motto: 'Hello World',
+        motto: 'Hello ',
         userInfo: {},
         hasUserInfo: false,
         canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -23,12 +23,13 @@ Page({
 			url: API.getName,
 			method: "get",
 			success: function(res){
-				console.log(res)
+				_this.setData({
+					name: "袁飞"
+				})
 			}
 		})
     },
     getUserInfo: function(e) {
-        console.log(e)
         app.globalData.userInfo = e.detail.userInfo
         this.setData({
             userInfo: e.detail.userInfo,
