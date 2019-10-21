@@ -24,7 +24,7 @@ Page({
 			method: "get",
 			success: function(res){
 				_this.setData({
-					name: res.data.name
+					name: "袁飞"
 				})
 			}
 		})
